@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.wujie.lookcomics.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_flayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_rgroup"/>
+
+    <RadioGroup
+        android:id="@id/main_rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_rbtn_home"
+            style="@style/Main_Rbtn"
+
+            android:drawableTop="@drawable/home"
+            android:text="@string/home"
+            />
+
+        <RadioButton
+            android:id="@+id/main_rbtn_discover"
+            style="@style/Main_Rbtn"
+            android:checked="true"
+            android:drawableTop="@drawable/discover_select"
+            android:text="@string/discover"
+            />
+
+        <RadioButton
+            android:id="@+id/main_rbtn_feed"
+            android:drawableTop="@drawable/feed_select"
+            style="@style/Main_Rbtn"
+            android:text="@string/feed"
+            />
+
+        <RadioButton
+            android:drawableTop="@drawable/me_select"
+            android:id="@+id/main_rbtn_me"
+            style="@style/Main_Rbtn"
+            android:text="@string/me"
+            />
+
+    </RadioGroup>
+</RelativeLayout>
