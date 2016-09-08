@@ -1,6 +1,6 @@
 package com.android.wujie.lookcomics.presenter.homepresenter;
 
-import com.android.wujie.lookcomics.bean.homebean.HomeBean;
+import com.android.wujie.lookcomics.bean.home.HomeBean;
 
 /**
  * Created by TF on 2016/9/5.

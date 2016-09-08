@@ -1,13 +1,45 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.android.wujie.lookcomics.ui.fragment.feed.FeedFragment">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.wujie.lookcomics.ui.fragment.feed.FeedFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RadioGroup
+        android:id="@+id/feed_top_rgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/feed_attention_rbtn"
+            style="@style/Feed_Top_Rbtn"
+            android:background="@drawable/feed_top_left_rbtn"
+            android:text="@string/feed_attention"/>
+
+        <RadioButton
+            android:id="@+id/feed_square_rbtn"
+            style="@style/Feed_Top_Rbtn"
+            android:background="@drawable/feed_top_right_rbtn"
+            android:enabled="false"
+            android:text="@string/feed_square"
+
+            />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/feed_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_find_nav_search_normal"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/feed_body_vp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
+        android:layout_below="@id/feed_top_rgroup"/>
 
-</FrameLayout>
+</RelativeLayout>

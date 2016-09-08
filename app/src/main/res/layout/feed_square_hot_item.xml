@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/feed_square_hot_cir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/feed_square_hot_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/feed_square_hot_cir"
+        android:text="测试"/>
+
+    <ImageView
+        android:id="@+id/feed_square_hot_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/feed_square_hot_addattention"/>
+
+    <TextView
+        android:id="@+id/feed_square_hot_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feed_square_hot_cir"
+        android:text="内容介绍"/>
+
+    <com.android.wujie.lookcomics.customview.CustomGridView
+        android:id="@+id/feed_square_hot_grid"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/feed_square_hot_des"
+        android:numColumns="3"/>
+
+    <TextView
+        android:id="@+id/feed_square_hot_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feed_square_hot_grid"
+        android:text="09-15"
+        />
+
+    <TextView
+        android:id="@+id/feed_square_hot_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feed_square_hot_grid"
+        android:layout_toLeftOf="@+id/feed_square_hot_comment"
+        android:drawableLeft="@drawable/ic_home_praise_normal"
+        android:text="6784"/>
+
+    <TextView
+        android:id="@id/feed_square_hot_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/feed_square_hot_grid"
+        android:drawableLeft="@drawable/ic_home_comment_normal"
+        android:text="417"
+        />
+</RelativeLayout>

@@ -1,6 +1,6 @@
 package com.android.wujie.lookcomics.model.HomeModle;
 
-import com.android.wujie.lookcomics.bean.homebean.HomeBean;
+import com.android.wujie.lookcomics.bean.home.HomeBean;
 import com.android.wujie.lookcomics.httputils.HttpUtils;
 import com.android.wujie.lookcomics.presenter.homepresenter.IHomePresenter;
 

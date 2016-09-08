@@ -1,4 +1,4 @@
-package com.android.wujie.lookcomics.bean.homebean;
+package com.android.wujie.lookcomics.bean.home;
 
 import java.util.List;
 

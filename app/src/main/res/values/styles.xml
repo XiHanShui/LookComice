@@ -18,5 +18,13 @@
         <item name="android:textColor">@color/main_rbtn_fonts_color</item>
 
     </style>
+<style name="Feed_Top_Rbtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+
+        <item name="android:textColor">@color/feed_top_rbtn_color</item>
+        <item name="android:gravity">center</item>
+    </style>
 
 </resources>

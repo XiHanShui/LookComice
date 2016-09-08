@@ -1,6 +1,6 @@
 package com.android.wujie.lookcomics.view.homeview;
 
-import com.android.wujie.lookcomics.bean.homebean.HomeBean;
+import com.android.wujie.lookcomics.bean.home.HomeBean;
 
 import java.util.List;
 

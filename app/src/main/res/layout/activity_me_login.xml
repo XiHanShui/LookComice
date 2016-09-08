@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context="com.android.wujie.lookcomics.ui.activity.me.MeLoginActivity">
+<ImageView
+    android:id="@+id/login_back_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_account_back_normal"
+    />
+    <TextView
+        android:id="@+id/login_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="忘记密码"/>
+    <View
+        android:id="@+id/login_space_one"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/login_back_img"/>
+    <ImageView
+        android:id="@+id/login_isvivsibe_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_space_one"
+        android:src="@drawable/login_edit_top"/>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_isvivsibe_img"
+        android:background="@drawable/login_bac"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="支持中国大陆"
+            android:drawableLeft="@drawable/login_phone_img"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="8~30位数字或者英文"
+            android:drawableLeft="@drawable/login_password_img"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
