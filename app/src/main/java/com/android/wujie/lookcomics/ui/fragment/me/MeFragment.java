@@ -68,6 +68,8 @@ public class MeFragment extends Fragment {
                 intent.setClass(mContext, MeLoginActivity.class);
                 break;
             case R.id.me_myattention_tv1:
+
+
                 intent.setClass(mContext, MeLoginActivity.class);
                 break;
             case R.id.me_collection_tv:
